@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans Kannada', system-ui, sans-serif;
+    --font-body: 'Public Sans', 'Noto Sans Kannada', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --ec-bg: #F5F9FC;
+    --ec-surface: #FFFFFF;
+    --ec-sidebar: #EFF6FB;
+    --ec-border: #D9E5F0;
+    --ec-blue: #0369A1;
+    --ec-blue-soft: #E0F2FE;
+    --ec-green: #15803D;
+    --ec-green-soft: #DCFCE7;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  html.text-scale-standard {
+    font-size: 16px;
+  }
+
+  html.text-scale-large {
+    font-size: 18px;
+  }
+
+  html.text-scale-xlarge {
+    font-size: 20px;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+html.high-contrast body {
+  background-color: #FFFFFF;
+  color: #020617;
+}
+
+html.high-contrast .ec-card {
+  border-color: #64748B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

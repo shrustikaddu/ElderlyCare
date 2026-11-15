@@ -1,0 +1,6 @@
+{
+  "name": "ElderlyCare – Smart Elderly Care and Medication Management Platform",
+  "description": "Smart elderly care and medication management platform helping seniors, family members, and caretakers coordinate medicines, schedules, doctor appointments, prescriptions, and emergency alerts.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
